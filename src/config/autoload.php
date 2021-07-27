@@ -1,0 +1,9 @@
+<?php
+$controllerLoader = new SplClassLoader('Controller', __DIR__ . '/../');
+$controllerLoader->register();
+
+$modelLoader = new SplClassLoader('Model', __DIR__ . '/../');
+$modelLoader->register();
+
+$vendorLoader = new SplClassLoader('Vendor', __DIR__ . '/../');
+$vendorLoader->register();
